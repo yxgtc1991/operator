@@ -1,0 +1,1 @@
+yq eval 'del(.. | .description?)' webapp.james.com_applications.yaml -i
