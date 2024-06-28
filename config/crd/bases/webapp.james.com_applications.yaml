@@ -1866,7 +1866,7 @@ spec:
                                 x-kubernetes-list-type: atomic
                               ip:
                                 type: string
-                                default: "127.0.0.1"
+                                default: ""
                             type: object
                           type: array
                           x-kubernetes-list-map-keys:
