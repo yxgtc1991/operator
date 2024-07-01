@@ -1,0 +1,17 @@
+apiVersion: webapp.james.com/v1
+kind: Application
+metadata:
+  labels:
+    app.kubernetes.io/name: operator
+    app.kubernetes.io/managed-by: kustomize
+    app: nginx
+  name: application-sample
+spec:
+  replicas: 3
+  template:
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+          ports:
+            - containerPort: 80
